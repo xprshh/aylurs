@@ -15,5 +15,5 @@
   };
 
   console.useXkbConfig = true;
-  services.xserver.xkb.layout = "us";   // Set keyboard layout to US
+  services.xserver.xkb.layout = "us";  
 }
