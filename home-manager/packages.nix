@@ -10,7 +10,7 @@
     linux = [
       (mpv.override {scripts = [mpvScripts.mpris];})
       spotify
-       gnome-secrets
+      # gnome-secrets
        fragments
     #   figma-linux
       # yabridge
