@@ -10,7 +10,7 @@
     linux = [
       (mpv.override {scripts = [mpvScripts.mpris];})
       spotify
-      notify-send
+      libnotify
       # gnome-secrets
        fragments
     #   figma-linux
