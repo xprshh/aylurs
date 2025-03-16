@@ -13,8 +13,8 @@
   # virtualisation
   programs.virt-manager.enable = false;
   virtualisation = {
-    podman.enable = false;
-    docker.enable = false;
+    podman.enable = true;
+    docker.enable = true;
     libvirtd.enable = true;
   };
 
@@ -35,7 +35,7 @@
       enable = true;
       excludePackages = [pkgs.xterm];
     };
-    printing.enable = true;
+    printing.enable = false;
     flatpak.enable = true;
     openssh.enable = true;
   };
