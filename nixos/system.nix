@@ -8,13 +8,13 @@
   };
 
   # camera
-  programs.droidcam.enable = true;
+  programs.droidcam.enable = false;
 
   # virtualisation
-  programs.virt-manager.enable = true;
+  programs.virt-manager.enable = false;
   virtualisation = {
-    podman.enable = true;
-    docker.enable = true;
+    podman.enable = false;
+    docker.enable = false;
     libvirtd.enable = true;
   };
 
