@@ -57,7 +57,7 @@
       pavucontrol
       brightnessctl
       swww
-      obsidan
+      obs-studio
       bottles
     ];
 
