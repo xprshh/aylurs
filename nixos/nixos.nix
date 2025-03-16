@@ -12,6 +12,7 @@ in {
     ./locale.nix
     ./nautilus.nix
     ./laptop.nix
+    ./lenovo.nix
     ./hyprland.nix
     ./gnome.nix
   ];
