@@ -1,21 +1,16 @@
 let
-  name = "Aylur";
+  name = "xpr";
 in {
   programs.git = {
     enable = true;
     extraConfig = {
       color.ui = true;
-      core.editor = "nvim";
+      core.editor = "helix";
       credential.helper = "store";
       github.user = name;
       push.autoSetupRemote = true;
     };
-    userEmail = "k.demeter@protonmail.com";
+    userEmail = " a.mameter@proton.me";
     userName = name;
   };
-  programs.ssh = {
-    enable = true;
-    addKeysToAgent = "yes";
-  };
-  services.ssh-agent.enable = true;
 }
