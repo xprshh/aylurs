@@ -57,6 +57,8 @@
       pavucontrol
       brightnessctl
       swww
+      obsidan
+      bottles
     ];
 
     systemd = {
