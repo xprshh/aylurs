@@ -59,6 +59,7 @@
       swww
       obs-studio
       bottles
+      obsidian
     ];
 
     systemd = {
