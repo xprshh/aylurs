@@ -47,8 +47,6 @@
       baobab
       gnome-text-editor
       gnome-calendar
-      gnome.gnome-boxes
-      gnome-system-monitor
       gnome.gnome-control-center
       gnome.gnome-weather
       gnome-calculator
