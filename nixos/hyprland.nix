@@ -60,6 +60,7 @@
       obs-studio
       bottles
       obsidian
+      kdenlive
     ];
 
     systemd = {
