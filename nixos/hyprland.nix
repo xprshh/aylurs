@@ -44,9 +44,7 @@
       qogir-icon-theme
       loupe
       nautilus
-      baobab
       gnome-text-editor
-      gnome-calendar
       gnome.gnome-control-center
       gnome.gnome-weather
       gnome-calculator
