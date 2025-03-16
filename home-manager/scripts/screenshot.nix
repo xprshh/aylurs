@@ -5,7 +5,7 @@ pkgs: let
   swappy = "${pkgs.swappy}/bin/swappy";
   wl-copy = "${pkgs.wl-clipboard}/bin/wl-copy";
 in
-  pkgs.writeShellScriptBin "screenshot" ''
+  pkgs.writeShellScript "screenshot" ''
     SCREENSHOTS="$HOME/Pictures/Screenshots"
     NOW=$(date +%Y-%m-%d_%H-%M-%S)
     TARGET="$SCREENSHOTS/$NOW.png"
@@ -15,8 +15,7 @@ in
     if [[ -n "$1" ]]; then
         ${wayshot} -f $TARGET
     else
-        selection=$(${slurp}) || exit 1
-        ${wayshot} -f $TARGET -s "$selection"
+        ${wayshot} -f $TARGET -s "$(${slurp})"
     fi
 
     ${wl-copy} < $TARGET
