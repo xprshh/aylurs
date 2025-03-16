@@ -8,12 +8,12 @@
     "db" = "distrobox";
     "tree" = "eza --tree";
     "nv" = "nvim";
-
-    "ll" = "ls";
-    "éé" = "ls";
-    "és" = "ls";
-    "l" = "ls";
-
+ 
+    "ll" = "eza";
+    "éé" = "eza";
+    "és" = "eza";
+    "l" = "eza";
+    "ls" = "eza";
     ":q" = "exit";
     "q" = "exit";
 
