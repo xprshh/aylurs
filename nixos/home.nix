@@ -30,7 +30,6 @@
     "file://${home}/Videos"
     "file://${home}/Downloads"
     "file://${home}/Desktop"
-    "file://${home}/Work"
     "file://${home}/Projects"
     "file://${home}/Vault"
     "file://${home}/School"
