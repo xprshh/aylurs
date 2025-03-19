@@ -80,7 +80,6 @@
   };
 
   # gc stuff for disk
-  optimise.automatic = true;
   nix.gc = {
     automatic = true;
     options = "--delete-older-than 3d";
