@@ -60,6 +60,17 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    icon-browser = {
+      url = "github:aylur/icon-browser";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    battery-notifier = {
+      url = "github:aylur/battery-notifier";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+
     hyprland-hyprspace = {
       url = "github:KZDKM/Hyprspace";
       inputs.hyprland.follows = "hyprland";
@@ -80,5 +91,4 @@
     };
   };
 }
-# flakes are cool
 
