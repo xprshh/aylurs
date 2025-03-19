@@ -7,6 +7,10 @@
     auto-optimise-store = true;
   };
 
+
+  # fan?
+  hardware.fancontrol.enable = true;
+
   # camera
   programs.droidcam.enable = false;
 
