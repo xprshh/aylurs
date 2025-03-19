@@ -8,9 +8,6 @@
   };
 
 
-  # fan?
-  hardware.fancontrol.enable = true;
-
   # camera
   programs.droidcam.enable = false;
 
