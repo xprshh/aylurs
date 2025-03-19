@@ -19,6 +19,7 @@ in {
 
   hyprland.enable = true;
   asusLaptop.enable = false;
+  gnome.enable = false;
 
   users.users.${username} = {
     isNormalUser = true;
