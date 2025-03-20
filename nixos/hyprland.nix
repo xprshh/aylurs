@@ -57,7 +57,6 @@
       brightnessctl
       swww
       obs-studio
-      bottles
       obsidian
       kdenlive
     ];
