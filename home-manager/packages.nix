@@ -11,7 +11,6 @@
       (mpv.override {scripts = [mpvScripts.mpris];})
       spotify
       libnotify
-      minecraft
       # linux-wifi-hotspot
       # gnome-secrets
       fragments
