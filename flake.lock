@@ -37,6 +37,26 @@
         "type": "github"
       }
     },
+    "battery-notifier": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742237136,
+        "narHash": "sha256-LuzHqoTBNApxd3XTIKBmBVoTA/tkNvF0AATqHZM+OVg=",
+        "owner": "aylur",
+        "repo": "battery-notifier",
+        "rev": "043ccbf959a339bedfa10253eebe229d45d68499",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aylur",
+        "repo": "battery-notifier",
+        "type": "github"
+      }
+    },
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
@@ -284,6 +304,26 @@
         "type": "github"
       }
     },
+    "icon-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742261382,
+        "narHash": "sha256-ikMTpwtF+CgNJLp1LaF0Nrm4MEfwbqbJXgtjdJ0zupI=",
+        "owner": "aylur",
+        "repo": "icon-browser",
+        "rev": "036b062d2d79ad814e16bd6521ae4a6e16594440",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aylur",
+        "repo": "icon-browser",
+        "type": "github"
+      }
+    },
     "lf-icons": {
       "flake": false,
       "locked": {
@@ -316,6 +356,22 @@
         "owner": "InioX",
         "ref": "v2.2.0",
         "repo": "matugen",
+        "type": "github"
+      }
+    },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1742376361,
+        "narHash": "sha256-VFMgJkp/COvkt5dnkZB4D2szVdmF6DGm5ZdVvTUy61c=",
+        "owner": "NixOS",
+        "repo": "nixos-hardware",
+        "rev": "daaae13dff0ecc692509a1332ff9003d9952d7a9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixos-hardware",
         "type": "github"
       }
     },
@@ -403,13 +459,16 @@
       "inputs": {
         "ags": "ags",
         "astal": "astal",
+        "battery-notifier": "battery-notifier",
         "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-hyprspace": "hyprland-hyprspace",
         "hyprland-plugins": "hyprland-plugins",
+        "icon-browser": "icon-browser",
         "lf-icons": "lf-icons",
         "matugen": "matugen",
+        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_5"
       }
     },
