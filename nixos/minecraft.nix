@@ -10,7 +10,7 @@
     '';
   };
 
-  environment.systemPackages = with pkgs; [
-    lunar-client
+  environment.systemPackages = with pkgs; [ 
+  prismlauncher
   ];
 }
