@@ -15,6 +15,7 @@ in {
     ./lenovo.nix
     ./hyprland.nix
     ./gnome.nix
+    ./minecraft.nix
   ];
 
   hyprland.enable = true;
