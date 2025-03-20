@@ -18,6 +18,7 @@
       # yabridge
       # yabridgectl
       # wine-staging
+      modrinth-app 
       nodejs
     ];
     cli = [
