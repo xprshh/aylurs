@@ -6,7 +6,7 @@
     eula = true;
     declarative = true;
 
-    package = pkgs.minecraft-server-1-12;
+    package = pkgs.minecraft-server;
     dataDir = "/var/lib/minecraft";
 
     serverProperties = {
