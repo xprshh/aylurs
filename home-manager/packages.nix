@@ -11,6 +11,7 @@
       (mpv.override {scripts = [mpvScripts.mpris];})
       spotify
       libnotify
+      minecraft
       # linux-wifi-hotspot
       # gnome-secrets
       fragments
@@ -18,7 +19,6 @@
       # yabridge
       # yabridgectl
       # wine-staging
-      modrinth-app 
       nodejs
     ];
     cli = [
