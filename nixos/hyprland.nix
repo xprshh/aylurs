@@ -59,7 +59,6 @@
       obs-studio
       obsidian
       kdenlive
-      minecraft
     ];
 
     systemd = {
