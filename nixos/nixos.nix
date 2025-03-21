@@ -62,7 +62,6 @@ in {
         ../home-manager/helix.nix
         ../home-manager/mimelist.nix
         ../home-manager/spicetify.nix
-        ../home-manager/spicetify-conf.nix
         ./home.nix
       ];
     };
