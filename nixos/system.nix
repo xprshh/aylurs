@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   # nix
   documentation.nixos.enable = false; # .desktop
   nixpkgs.config.allowUnfree = true;
@@ -6,7 +6,6 @@
     experimental-features = "nix-command flakes";
     auto-optimise-store = true;
   };
-
 
   # camera
   programs.droidcam.enable = false;
@@ -34,7 +33,7 @@
   services = {
     xserver = {
       enable = true;
-      excludePackages = [pkgs.xterm];
+      excludePackages = [ pkgs.xterm ];
     };
     printing.enable = false;
     flatpak.enable = true;
@@ -49,14 +48,9 @@
   '';
 
   # kde connect
-  networking.firewall = rec {
-    allowedTCPPortRanges = [
-      {
-        from = 1714;
-        to = 1764;
-      }
-    ];
-    allowedUDPPortRanges = allowedTCPPortRanges;
+  networking.firewall = {
+    allowedTCPPortRanges = [{ from = 1714; to = 1764; }];
+    allowedUDPPortRanges = [{ from = 1714; to = 1764; }];
   };
 
   # network
@@ -72,7 +66,7 @@
   # bootloader
   boot = {
     tmp.cleanOnBoot = true;
-    supportedFilesystems = ["ntfs"];
+    supportedFilesystems = [ "ntfs" ];
     loader = {
       timeout = 2;
       systemd-boot.enable = true;
@@ -80,12 +74,19 @@
     };
   };
 
-  # gc stuff for disk
+  # garbage collection for disk
   nix.gc = {
     automatic = true;
     options = "--delete-older-than 3d";
   };
 
+  # systemd OOMD
+  systemd.oomd = {
+    enableRootSlice = true;
+    extraConfig = {
+      DefaultMemoryPressureDurationSec = "20s";
+    };
+  };
+
   system.stateVersion = "23.05";
 }
-
