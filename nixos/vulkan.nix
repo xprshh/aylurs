@@ -4,7 +4,6 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    vulkanSupport = true; # Enable Vulkan support
   };
 
   programs.gamescope.enable = true;
