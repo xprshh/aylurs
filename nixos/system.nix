@@ -28,6 +28,8 @@
     neovim
     git
     wget
+    protonvpn-gui
+    protonvpn-cli
   ];
 
   # services
