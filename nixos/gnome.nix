@@ -15,6 +15,7 @@
         qogir-icon-theme
         gnome-extension-manager
         wl-clipboard
+        osu-lazer-bin
       ];
 
       gnome.excludePackages =
