@@ -20,6 +20,7 @@ in {
     ./amd.nix
     ./intel.nix
     ./local-clock.nix
+    ./nvidia.nix
   ];
 
   hyprland.enable = true;
