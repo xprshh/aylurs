@@ -19,6 +19,7 @@ in {
     ./vulkan.nix
     ./amd.nix
     ./intel.nix
+    ./local-clock.nix
   ];
 
   hyprland.enable = true;
