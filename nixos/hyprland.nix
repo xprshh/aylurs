@@ -58,7 +58,7 @@
       swww
       obs-studio
       obsidian
-      kdenlive
+      osu-lazer-bin
     ];
 
     systemd = {
