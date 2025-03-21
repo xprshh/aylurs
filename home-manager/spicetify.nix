@@ -5,6 +5,5 @@
 
   home.packages = with pkgs; [
     spicetify-cli
-    spicetify-themes
   ];
 }
