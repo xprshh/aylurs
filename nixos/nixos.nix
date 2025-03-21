@@ -16,6 +16,7 @@ in {
     ./hyprland.nix
     ./gnome.nix
     ./minecraft.nix
+    ./vulkan.nix
   ];
 
   hyprland.enable = true;
@@ -62,6 +63,7 @@ in {
         ../home-manager/helix.nix
         ../home-manager/mimelist.nix
         ../home-manager/spicetify.nix
+        ../home-manager/mangohud.nix
         ./home.nix
       ];
     };
