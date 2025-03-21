@@ -17,6 +17,8 @@ in {
     ./gnome.nix
     ./minecraft.nix
     ./vulkan.nix
+    ./amd.nix
+    ./intel.nix
   ];
 
   hyprland.enable = true;
