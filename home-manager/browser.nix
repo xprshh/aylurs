@@ -33,27 +33,19 @@
     };
   };
 
-  policies = {
-    ExtensionSettings = {
-      "uBlock0@raymondhill.net" = {
-        install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-        installation_mode = "force_installed";
-      };
+  ExtensionSettings = {
+    # "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
 
-      "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}" = {
-        install_url = "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi";
-        installation_mode = "force_installed";
-      };
+    # ublock-origin:
+    "uBlock0@raymondhill.net" = {
+      install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+      installation_mode = "force_installed";
+    };
 
-      "simple-translate@sienori" = {
-        install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-translate/latest.xpi";
-        installation_mode = "force_installed";
-      };
-
-      "{bbb880ce-43c9-47ae-b746-c3e0096c5b76}" = {
-        install_url = "https://addons.mozilla.org/firefox/downloads/latest/catppuccin-gh-file-explorer/latest.xpi";
-        installation_mode = "force_installed";
-      };
+    # simple-translate:
+    "simple-translate@sienori" = {
+      install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-translate/latest.xpi";
+      installation_mode = "force_installed";
     };
   };
-}
+};
