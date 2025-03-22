@@ -17,10 +17,8 @@ in {
     ./gnome.nix
     ./minecraft.nix
     ./vulkan.nix
-    ./amd.nix
     ./intel.nix
     ./local-clock.nix
-    ./nvidia.nix
     ./nixos.nix
   ];
 
