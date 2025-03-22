@@ -11,7 +11,7 @@
       supportedFilesystems = ["ntfs"];
     };
 
-    # use latest kernel
+    # Use latest kernel
     kernelPackages = pkgs.linuxPackages_latest;
 
     consoleLogLevel = 3;
@@ -29,8 +29,8 @@
     };
 
     plymouth.enable = true;
-
     tmp.cleanOnBoot = true;
   };
-  environment.systemPackages = [config.boot.kernelPackages.cpupower];
+
+  environment.systemPackages = [pkgs.linuxPackages_latest.cpupower];
 }
