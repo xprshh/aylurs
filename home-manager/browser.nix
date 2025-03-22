@@ -32,18 +32,5 @@
       '';
     };
   };
-
-  programs.firefox.extensionSettings = {
-    # ublock-origin:
-    "uBlock0@raymondhill.net" = {
-      install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-      installation_mode = "force_installed";
-    };
-
-    # simple-translate:
-    "simple-translate@sienori" = {
-      install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-translate/latest.xpi";
-      installation_mode = "force_installed";
-    };
-  };
 }
+
