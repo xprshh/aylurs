@@ -2,13 +2,12 @@
   description = "Configurations of Aylur";
 
   outputs = inputs @ {
-    self,
     home-manager,
     nixpkgs,
-    ...
+    # Add any other inputs you actually need
   }: {
     packages.x86_64-linux.default =
-      nixpkgs.legacyPackages.x86_64-linux.callPackage ./ags {inherit inputs;};
+      nixpkgs.legacyPackages.x86_64-linux.callPackage ./ags { inherit inputs; };
 
     # nixos config
     nixosConfigurations = {
@@ -21,7 +20,7 @@
         modules = [
           ./nixos/nixos.nix
           home-manager.nixosModules.home-manager
-          {networking.hostName = "nixos";}
+          { networking.hostName = "nixos"; }
         ];
       };
     };
@@ -30,9 +29,9 @@
     homeConfigurations = {
       "demeter" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-darwin;
-        extraSpecialArgs = {inherit inputs;};
+        extraSpecialArgs = { inherit inputs; };
         modules = [
-          ({pkgs, ...}: {
+          ({ pkgs, ... }: {
             nix.package = pkgs.nix;
             home.username = "demeter";
             home.homeDirectory = "/Users/demeter";
