@@ -8,7 +8,6 @@
 
     initrd = {
       systemd.enable = true;
-      supportedFilesystems = ["ntfs"];
     };
 
     # Use latest kernel
