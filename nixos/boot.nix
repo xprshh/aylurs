@@ -28,7 +28,6 @@
     };
 
     plymouth.enable = true;
-    tmp.cleanOnBoot = true;
   };
 
   environment.systemPackages = [pkgs.linuxPackages_latest.cpupower];
