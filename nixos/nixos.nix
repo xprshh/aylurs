@@ -22,7 +22,6 @@ in {
     ./local-clock.nix
     ./nvidia.nix
     ./nixos.nix
-    ./security.nix
   ];
 
   hyprland.enable = true;
